@@ -1,0 +1,92 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --color-block-grey: #cfcfcf;
+    --color-block: #f0f8ff;
+    --block-hover: rgb(170, 203, 204);
+    --backgound-measege: rgb(9, 40, 41);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.section {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.round-number {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.score {
+    font-size: 16px;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 460px;
+}
+
+.page-wrapper .block{
+    background-color: var(--color-block);
+    border: 1px solid var(--color-block-grey);
+    cursor: pointer;
+    height: 150px;
+    text-align: center;
+    width: 150px;
+    font-size: 100px;
+}
+
+.block:hover {
+    background-color: var(--block-hover);
+    transition: all 0.3s ease;
+}
+
+.meassege {
+    position: absolute;
+    top: 31%;
+    left: 43%;
+    width: 300px;
+    height: 100px;
+    background-color: var(--backgound-measege);
+    text-transform: uppercase;
+}
+
+.meassege .wrrapper {
+    position: relative
+}
+
+.meassege-text {
+    font-size: 20px;
+    color: var(--white);
+    margin-top: 37px;
+}
+
+.currentPlayer {
+    margin: 50px 50px;
+}
+
+.now-go {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--black);
+}
