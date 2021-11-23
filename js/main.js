@@ -72,6 +72,7 @@ function restart(text) {
     meassege.querySelector('.meassege-text').textContent = text;
     meassege.classList.remove('visually-hidden');
     meassegeClose();
+    player = 'x';
     for (var i = 0; i < cell.length; i++) {
         cell[i].innerHTML = '';
     }
